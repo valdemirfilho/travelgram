@@ -1,0 +1,53 @@
+header {
+  background-color: var(--surface-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0;
+  padding-block: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  padding: 4px;
+}
+
+nav ul li:last-child img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+@media (width <= 360px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul { 
+    flex-direction: column-reverse;
+    
+  }
+
+}

@@ -1,0 +1,15 @@
+footer div {
+  padding-block: 24px;
+  display: flex;
+  gap: 24px;
+  font: var(--text-sm);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+
+footer div span:nth-child(1) {
+  margin-right: auto;
+}
